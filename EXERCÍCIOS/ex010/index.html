@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1> <!--Quando você colocar link externo no seu site você precisa fechar o seu site usando as "target blank" e "target rel external" para não sobrepor o site externo ao seu, ou seja ele abrirá o link externo em outra janela mantendo o seu site também aberto -->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="blank" rel="external">canal gratuito no YouTube</a></p>
+    <h2>Usando Links Internos</h2> <!--2 maneiras de criar um link interno; 1º tipo criando um PAG002 usando as target next para dizer para o google que a proxima pag imediatamente a anterior é a 002 e quando  eu crio um link interno, eu não preciso indicar a url inteira. Crie a ancora colocando a tag "a" e segure o ctrol e aperte espaço que irá aparecer as paginas disponíveis e para funcionar a pagina que vc deseja voce precisa criar a pasta pag002 na mesma pasta que está o index. A 2ª maneira é criar uma pasta que esteja fora da pasta que contem o indez e a 2º página-->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <h1>Links para Download</h1> <!--Caso não baixe só colocando a referencia (ctrol + espço e escolhendo o arquivo) você pode utilizar uma outra configuração colocando a palavra Download="meulivro.pdf". Caso também não funcione você pode colocar uma outra configuração colocando type=application/pdf. Você pode encontrar essa lista com todas as configurações no site: iana.org/assigments/midiatypes. Para encontrar alguma aplicação especifica clique ctrol + F para pesquisar e da enter para navegar entre os arquivos -->
+    <ul>
+        <li> <a href="livro/meulivro.pdf">Baixar o livro em PDF</a></li>
+        <li> <a href="livro/meulivro.zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
